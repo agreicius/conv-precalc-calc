@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pretext xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+  <docinfo>
+<macros>
+\newcommand{\ds}{\displaystyle}
+\renewcommand{\arraystretch}{1.5}
+\newcommand{\todo}[1]{{\color{red}[[\textbf{XXX TODO: }#1]]}}
+\renewcommand{\arraystretch}{1.5}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\arraystretch}{1.5}
+\renewcommand{\chaptermark}[1]{\markboth{\sffamily\normalsize\bfseries\chaptername\ \thechapter.~#1}{}}
+\renewcommand{\arraystretch}{1.5}
+\renewcommand{\sectionmark}[1]{{}}
+\renewcommand{\arraystretch}{1.5}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\arraystretch}{1.5}
+\renewcommand{\arraystretch}{1.5}
+\newcommand{\thechapterimage}{}
+\renewcommand{\arraystretch}{1.5}
+\renewcommand{\arraystretch}{1.5}
+\newcommand{\thechapterspaceabove}{}
+\renewcommand{\arraystretch}{1.5}
+\renewcommand{\arraystretch}{1.5}
+\newcommand{\thechapterspacebelow}{}
+\renewcommand{\arraystretch}{1.5}
+\renewcommand{\arraystretch}{1.5}
+\renewcommand{\arraystretch}{1.5}
+\newcommand{\tocentrypartnumbered}[1]{
+\setlength\fboxsep{0pt}
+\contentslabel[
+\colorbox{ocre!20}{
+\strut\parbox[c][.7cm]{1.1cm}{
+\color{ocre!70}\Large\sffamily\bfseries\thecontentslabel
+}
+}
+\hspace{4pt}
+\colorbox{ocre!40}{
+\strut\parbox[c][.7cm]{\linewidth-1.25cm}{
+\Large\sffamily #1
+}
+}
+]{1.25cm}
+}
+\renewcommand{\arraystretch}{1.5}
+\newcommand{\tocentrypartunnumbered}[1]{
+\setlength\fboxsep{0pt}
+\contentslabel[
+\colorbox{ocre!40}{
+\strut\parbox[c][.7cm]{\linewidth}{
+\Large\sffamily #1
+}
+}
+]{1.25cm}
+}
+\renewcommand{\arraystretch}{2}
+\renewcommand{\labelenumi}{\arabic{enumi}.}
+\renewcommand{\arraystretch}{1.5}
+\renewcommand{\labelenumii}{\alph{enumii}.}
+\renewcommand{\arraystretch}{1.5}
+\renewcommand{\labelenumiii}{\roman{enumiii}.}
+\renewcommand{\arraystretch}{1}
+\renewcommand{\labelitemi}{\Large \textbullet}
+\renewcommand{\arraystretch}{1}
+\renewcommand{\labelitemii}{--}
+\renewcommand{\arraystretch}{1}
+\renewcommand{\labelitemiii}{$\circ$}
+\renewcommand{\arraystretch}{1}
+\renewcommand{\titlepage}[2]{
+\thispagestyle{empty}
+\begin{tikzpicture}[remember picture, overlay]
+\node [inner sep=0pt] at (current page.center) {#1};
+\node [anchor=center, inner sep=1.25cm, rectangle, fill=ocre!30!white, fill opacity=0.6, text opacity=1, minimum height=0.2\paperheight, minimum width=\paperwidth, text width=0.8\paperwidth] at (current page.center) {#2};
+\end{tikzpicture}
+}
+\renewcommand{\arraystretch}{1}
+\renewcommand{\qedsymbol}{$\blacksquare$}
+\renewcommand{\arraystretch}{1}
+\renewcommand{\arraystretch}{1}
+\renewcommand{\arraystretch}{1}
+\renewcommand{\arraystretch}{1}
+\renewcommand{\arraystretch}{1}
+\renewcommand{\arraystretch}{1}
+\renewcommand{\arraystretch}{1}
+\renewcommand{\arraystretch}{1}
+\renewcommand{\arraystretch}{1}
+\renewcommand{\arraystretch}{1}
+\renewcommand{\arraystretch}{1}
+\renewcommand{\arraystretch}{1}
+\renewcommand{\arraystretch}{1}
+\renewcommand{\arraystretch}{1}
+</macros>
+<latex-image-preamble>
+\usepackage{tikz}
+\usepackage{tkz-graph}
+\usepackage{tkz-euclide}
+\usetikzlibrary{patterns}
+\usetikzlibrary{positioning}
+\usetikzlibrary{matrix,arrows}
+\usetikzlibrary{calc}
+\usetikzlibrary{shapes}
+\usetikzlibrary{through,intersections,decorations,shadows,fadings}
+\usepackage{pgfplots}
+</latex-image-preamble>
+  </docinfo>
+  <book>
+    <title>Title Goes Here</title>
+    <frontmatter>
+      <titlepage>
+      </titlepage>
+    </frontmatter>
+    <xi:include href="./chapter1.ptx"/>
+    <xi:include href="./chapter2.ptx"/>
+    <xi:include href="./chapter3.ptx"/>
+    <xi:include href="./chapter4.ptx"/>
+    <xi:include href="./chapter5.ptx"/>
+    <xi:include href="./chapter6.ptx"/>
+    <xi:include href="./chapter7.ptx"/>
+    <xi:include href="./chapter8.ptx"/>
+    <xi:include href="./chapter9.ptx"/>
+    <backmatter>
+      <xi:include href="./bibliography.ptx"/>
+      <index>
+        <title>Index</title>
+        <index-list/>
+      </index>
+    </backmatter>
+  </book>
+</pretext>
