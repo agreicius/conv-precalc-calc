@@ -1,0 +1,18 @@
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Algebraic Functions</title>
+  <introduction>
+    <p>
+          <idx><h>Functions</h></idx>
+    </p>
+  </introduction>
+  <xi:include  href="section2-1.ptx"/>
+  <xi:include  href="sec_linearandquadraticfunctions.ptx"/>
+  <xi:include  href="sec_avgchange.ptx"/>
+  <xi:include  href="sec_linearandquadraticmodeling.ptx"/>
+  <xi:include  href="sec_polyandratfuncs.ptx"/>
+  <xi:include  href="section2-6.ptx"/>
+  <xi:include  href="sec_pdfuncsandabsval.ptx"/>
+  <xi:include  href="sec_solvinginequalities.ptx"/>
+  <xi:include  href="section2-9.ptx"/>
+  <xi:include  href="section2-10.ptx"/>
+</chapter>
